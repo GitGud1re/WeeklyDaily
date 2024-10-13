@@ -11,13 +11,13 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: #4B4B4B; /* Dark gray */
             color: white;
         }
         h1 {
@@ -35,13 +35,17 @@
             padding: 20px;
         }
         .article {
-            background: white;
-            border: 1px solid #ddd;
+            background: #FFFFFF; /* White for contrast */
+            border: 1px solid #ccc; /* Light gray border */
             border-radius: 5px;
             width: 300px;
             margin: 10px;
             padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .article:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
         }
         .article img {
             max-width: 100%;
@@ -49,6 +53,7 @@
         }
         .article h2 {
             font-weight: 700; /* Bold article title */
+            color: #4B4B4B; /* Dark gray title */
         }
         .subscribe-form {
             text-align: center;
@@ -58,16 +63,20 @@
             padding: 10px;
             width: 250px;
             margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         .subscribe-form input[type="submit"] {
             padding: 10px 15px;
-            background-color: #4CAF50;
+            background-color: #4B4B4B; /* Dark gray */
             border: none;
             color: white;
             cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
         .subscribe-form input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #3A3A3A; /* Darker gray on hover */
         }
     </style>
 </head>
@@ -97,6 +106,16 @@
             <img src="https://via.placeholder.com/150" alt="Article 4 Image">
             <h2>Article Title 4</h2>
             <p>This is a brief description of Article 4. It conveys the essential information.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 5 Image">
+            <h2>Article Title 5</h2>
+            <p>This is a brief description of Article 5. It provides insights into the topic discussed.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 6 Image">
+            <h2>Article Title 6</h2>
+            <p>This is a brief description of Article 6. It highlights important takeaways.</p>
         </div>
     </div>
 
