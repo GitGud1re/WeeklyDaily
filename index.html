@@ -1,59 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Newsletter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <h1>Welcome to My Newsletter</h1>
-            <p>Stay updated with the latest news, trends, and updates on our platform.</p>
-        </header>
-
-        <!-- Main Content Section -->
-        <div class="main-content">
-            <!-- Articles Section -->
-            <div class="articles">
-                <div class="article">
-                    <img src="https://via.placeholder.com/400" alt="Article Image 1">
-                    <h2>Article 1</h2>
-                    <p>Brief introduction to the first article. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-
-                <div class="article">
-                    <img src="https://via.placeholder.com/400" alt="Article Image 2">
-                    <h2>Article 2</h2>
-                    <p>Brief introduction to the second article. Vestibulum nec lorem at turpis auctor tempus.</p>
-                </div>
-
-                <div class="article">
-                    <img src="https://via.placeholder.com/400" alt="Article Image 3">
-                    <h2>Article 3</h2>
-                    <p>Brief introduction to the third article. Curabitur placerat felis at felis pharetra, id tempor libero.</p>
-                </div>
-
-                <div class="article">
-                    <img src="https://via.placeholder.com/400" alt="Article Image 4">
-                    <h2>Article 4</h2>
-                    <p>Brief introduction to the fourth article. Quisque aliquet enim sed arcu vulputate consequat.</p>
-                </div>
-            </div>
-
-            <!-- Ad Section -->
-            <aside class="ad">
-                <h2>Sponsored Ad</h2>
-                <p>Your advertisement could be here!</p>
-            </aside>
-        </div>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>&copy; 2024 My Newsletter. All rights reserved.</p>
-        </footer>
-    </div>
+  <h1>Welcome to My Newsletter</h1>
+  <p>Subscribe to receive weekly updates!</p>
+  <form action="MAILCHIMP_FORM_ACTION_URL" method="post">
+    <input type="email" name="EMAIL" placeholder="Enter your email" required>
+    <input type="submit" value="Subscribe">
+  </form>
 </body>
 </html>
