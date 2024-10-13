@@ -1,17 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsletter</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-weight: 700; /* Bold title */
+        }
+        .intro {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .article {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .article h2 {
+            font-weight: 700; /* Bold article title */
+        }
+        .subscribe-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 5px;
+        }
+        .subscribe-form input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .subscribe-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Newsletter</h1>
-  <p>Subscribe to receive weekly updates!</p>
-  <form action="MAILCHIMP_FORM_ACTION_URL" method="post">
-    <input type="email" name="EMAIL" placeholder="Enter your email" required>
-    <input type="submit" value="Subscribe">
-  </form>
+    <header>
+        <h1>Welcome to My Newsletter</h1>
+        <p class="intro">Stay updated with our latest articles and news!</p>
+    </header>
+    
+    <div class="articles">
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 1 Image">
+            <h2>Article Title 1</h2>
+            <p>This is a brief description of Article 1. It gives an overview of the content covered.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 2 Image">
+            <h2>Article Title 2</h2>
+            <p>This is a brief description of Article 2. It highlights the key points discussed.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 3 Image">
+            <h2>Article Title 3</h2>
+            <p>This is a brief description of Article 3. It summarizes the main ideas presented.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 4 Image">
+            <h2>Article Title 4</h2>
+            <p>This is a brief description of Article 4. It conveys the essential information.</p>
+        </div>
+    </div>
+
+    <div class="subscribe-form">
+        <form action="MAILCHIMP_FORM_ACTION_URL" method="post">
+            <input type="email" name="EMAIL" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
 </body>
 </html>
+
