@@ -5,122 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Daily</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f6f9;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
             text-align: center;
-            padding: 15px;
-            background-color: #34495e; /* Modern dark blue */
+            padding: 20px;
+            background-color: #4B4B4B; /* Dark gray */
             color: white;
         }
         h1 {
             margin: 0;
-            font-weight: 700;
-            font-size: 2.5em;
+            font-weight: 700; /* Bold title */
         }
         .intro {
-            margin: 0;
-            padding: 10px 0;
-            font-size: 1.2em;
+            margin: 20px;
+            font-size: 18px;
         }
-
-        .content {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .articles-container {
-            width: 70%;
-        }
-
         .articles {
             display: flex;
-            flex-direction: column;
-            gap: 20px; /* Space between articles */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
         }
-
         .article {
-            display: flex;
-            background: #ffffff;
-            border-radius: 10px;
+            background: #FFFFFF; /* White for contrast */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            width: 300px;
+            margin: 10px;
             padding: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
         .article:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02); /* Slight zoom effect on hover */
         }
         .article img {
-            width: 150px; /* Adjust image size */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%;
             border-radius: 5px;
-            margin-right: 15px; /* Space between image and text */
         }
         .article h2 {
-            font-weight: 700;
-            font-size: 1.5em;
-            color: #34495e;
+            font-weight: 700; /* Bold article title */
+            color: #4B4B4B; /* Dark gray title */
         }
-        .article p {
-            font-size: 1em;
-            color: #7f8c8d; /* Modern gray text */
-        }
-
-        .read-more-button {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #34495e; /* Match the theme */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-top: 10px; /* Spacing below the text */
-        }
-        .read-more-button:hover {
-            background-color: #2c3e50; /* Darker shade on hover */
-        }
-
-        .highlight {
-            background-color: #ecf0f1;
-            border-radius: 10px;
-            padding: 15px;
-            width: 28%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .highlight h2 {
-            font-weight: 700;
-            color: #34495e;
-            font-size: 1.5em;
-        }
-
-        .highlight p {
-            color: #7f8c8d;
-        }
-
-        .ad {
-            background-color: #f1c40f; /* Eye-catching yellow for the ad */
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            color: #34495e;
-            font-weight: bold;
-        }
-
         .subscribe-form {
             text-align: center;
-            margin: 40px 0;
+            margin: 20px 0;
         }
         .subscribe-form input[type="email"] {
             padding: 10px;
@@ -130,8 +67,8 @@
             border-radius: 5px;
         }
         .subscribe-form input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #34495e;
+            padding: 10px 15px;
+            background-color: #4B4B4B; /* Dark gray */
             border: none;
             color: white;
             cursor: pointer;
@@ -139,76 +76,46 @@
             transition: background-color 0.3s;
         }
         .subscribe-form input[type="submit"]:hover {
-            background-color: #2c3e50;
+            background-color: #3A3A3A; /* Darker gray on hover */
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Weekly Daily Newsletter</h1>
-        <p class="intro">Weekly news delivered every Saturday</p>
+        <p class="intro">Weekly news every saturday</p>
     </header>
-
-    <div class="content">
-        <div class="articles-container">
-            <div class="articles">
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 1 Image">
-                    <div>
-                        <h2>Article Title 1</h2>
-                        <p>Article description for article 1...</p>
-                        <a href="article1 goes here link" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 2 Image">
-                    <div>
-                        <h2>Article Title 2</h2>
-                        <p>Article description for article 2...</p>
-                        <a href="YOUR_LINKVERTISE_LINK_HERE" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 3 Image">
-                    <div>
-                        <h2>Article Title 3</h2>
-                        <p>Article description for article 3...</p>
-                        <a href="YOUR_LINKVERTISE_LINK_HERE" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 4 Image">
-                    <div>
-                        <h2>Article Title 4</h2>
-                        <p>Article description for article 4...</p>
-                        <a href="YOUR_LINKVERTISE_LINK_HERE" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 5 Image">
-                    <div>
-                        <h2>Article Title 5</h2>
-                        <p>Article description for article 5...</p>
-                        <a href="YOUR_LINKVERTISE_LINK_HERE" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="https://via.placeholder.com/150" alt="Article 6 Image">
-                    <div>
-                        <h2>Article Title 6</h2>
-                        <p>Article description for article 6...</p>
-                        <a href="YOUR_LINKVERTISE_LINK_HERE" class="read-more-button">Read More</a>
-                    </div>
-                </div>
-            </div>
+    
+    <div class="articles">
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 1 Image">
+            <h2>Article Title 1</h2>
+            <p>Jakir</p>
         </div>
-
-        <div class="highlight">
-            <h2>Newest Article</h2>
-            <p>Catch up on the latest news and updates...</p>
-            <div class="ad">
-                Space for Ad
-            </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 2 Image">
+            <h2>Article Title 2</h2>
+            <p>Dr jakir man </p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 3 Image">
+            <h2>Article Title 3</h2>
+            <p>Dr jakir vs dr yunus</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 4 Image">
+            <h2>Article Title 4</h2>
+            <p>Jakir2</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 5 Image">
+            <h2>Article Title 5</h2>
+            <p>Most awaited moments from the show dr jakir</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/150" alt="Article 6 Image">
+            <h2>Article Title 6</h2>
+            <p>placeboo effect</p>
         </div>
     </div>
 
@@ -220,3 +127,4 @@
     </div>
 </body>
 </html>
+
