@@ -88,36 +88,6 @@
             background-color: #2c3e50; /* Darker shade on hover */
         }
 
-        .highlight {
-            background-color: #ecf0f1;
-            border-radius: 10px;
-            padding: 15px;
-            width: 28%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .highlight h2 {
-            font-weight: 700;
-            color: #34495e;
-            font-size: 1.5em;
-        }
-
-        .highlight p {
-            color: #7f8c8d;
-        }
-
-        .ad {
-            background-color: #dab00c; /* Eye-catching yellow for the ad */
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            color: #34495e;
-            font-weight: bold;
-        }
-
         .subscribe-form {
             text-align: center;
             margin: 40px 0;
@@ -149,11 +119,11 @@
         <p class="intro">Weekly news delivered every Saturday</p>
     </header>
 
-    <div class="content">
+    <main class="content">
         <div class="articles-container">
             <div class="articles">
                 <div class="article">
-                    <img src="https://c8.alamy.com/comp/R5FP5H/apple-cut-in-half-with-seeds-and-pulp-to-show-R5FP5H.jpg" alt="Article 1 Image">
+                    <img src="https://c8.alamy.com/comp/R5FP5H/apple-cut-in-half-with-seeds-and-pulp-to-show-R5FP5H.jpg" alt="Apple cut in half with seeds">
                     <div>
                         <h2>How apple seeds cause harm to human body</h2>
                         <p>Apples can be a healthy snack or ingredient. However, it is not advisable to eat the seeds, as they contain small amounts of a chemical that produces cyanide, which is highly toxic.</p>
@@ -202,22 +172,15 @@
                 </div>
             </div>
         </div>
+    </main>
 
-        <div class="highlight">
-            <h2>Newest Article</h2>
-            <p>Catch up on the latest news and updates...</p>
-            <div class="ad">
-                Space for Ad
-            </div>
-        </div>
-    </div>
-
-    <div class="subscribe-form">
+    <footer class="subscribe-form">
         <form action="MAILCHIMP_FORM_ACTION_URL" method="post">
             <input type="email" name="EMAIL" placeholder="Enter your email" required>
             <input type="submit" value="Subscribe">
         </form>
-    </div>
- <script src="mobileRespo.js" defer></script>
+    </footer>
+    
+    <script src="mobileRespo.js" defer></script>
 </body>
 </html>
