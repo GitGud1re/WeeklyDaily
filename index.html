@@ -89,28 +89,25 @@
             background-color: #2c3e50; /* Darker shade on hover */
         }
 
-        .subscribe-form {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .subscribe-form input[type="email"] {
-            padding: 10px;
-            width: 250px;
-            margin-right: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .subscribe-form input[type="submit"] {
-            padding: 10px 20px;
+        /* Subscribe button */
+        .subscribe-button {
+            display: inline-block;
+            padding: 15px 25px;
             background-color: #34495e;
-            border: none;
             color: white;
-            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.2em;
             border-radius: 5px;
+            text-align: center;
             transition: background-color 0.3s;
         }
-        .subscribe-form input[type="submit"]:hover {
+        .subscribe-button:hover {
             background-color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
         }
     </style>
 </head>
@@ -175,45 +172,8 @@
         </div>
     </main>
 
-    <footer class="subscribe-form">
-        <div id="mc_embed_signup">
-            <form action="https://github.us13.list-manage.com/subscribe/post?u=744e87878226c55264731f9f6&amp;id=fc65afcae7&amp;f_id=00307fe9f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                <h2>Subscribe to our Newsletter</h2>
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" name="FNAME" class="text" id="mce-FNAME" value="">
-                </div>
-                <div id="mce-responses" class="clear foot">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                </div>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                    <input type="text" name="b_744e87878226c55264731f9f6_fc65afcae7" tabindex="-1" value="">
-                </div>
-                <div class="optionalParent">
-                    <div class="clear foot">
-                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-        <script type="text/javascript">
-            (function($) {
-                window.fnames = new Array();
-                window.ftypes = new Array();
-                fnames[0] = 'EMAIL';
-                ftypes[0] = 'email';
-                fnames[1] = 'FNAME';
-                ftypes[1] = 'text';
-            }(jQuery));
-            var $mcj = jQuery.noConflict(true);
-        </script>
+    <footer>
+        <a href="signup.html" class="subscribe-button">Subscribe to Our Newsletter</a>
     </footer>
     
     <script src="mobileRespo.js" defer></script>
