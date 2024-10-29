@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('D:\projectNewsletter\image1.jpg'); /* Replace with your image path */
+    background-image: url('image1.jpg'); /* Replace with your image path */
     background-size: cover; /* This makes the background cover the entire area */
     background-position: center; /* Centers the background image */
     color: #333;
