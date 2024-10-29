@@ -1,15 +1,12 @@
 /* Existing styles... */
 
-/* Sign up section with background image */
-.signup-banner {
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/25/81/104/digital-art-abstract-minimalism-black-wallpaper-preview.jpg');
+body {
+    background-image: url('path/to/your-image.jpg'); /* Adjust this path */
     background-size: cover;
     background-position: center;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    color: white; /* Ensures text contrasts with background */
+    background-repeat: no-repeat;
 }
+
 
 .signup-banner h2, .signup-banner .subscribe-button {
     color: white; /* Adjust text color for readability */
