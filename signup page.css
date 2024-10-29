@@ -1,0 +1,37 @@
+<style>
+    /* Existing styles... */
+
+    /* Sign up section with background image */
+    .signup-banner {
+        background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        color: white; /* Ensures text contrasts with background */
+    }
+    .signup-banner h2, .signup-banner .subscribe-button {
+        color: white; /* Adjust text color for readability */
+    }
+
+    .signup-banner .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.5); /* Darker background for contrast */
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    /* Adjust button style if needed */
+    .subscribe-button {
+        background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent for blending */
+        transition: background-color 0.3s;
+    }
+    .subscribe-button:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+</style>
