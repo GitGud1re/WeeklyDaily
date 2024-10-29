@@ -7,7 +7,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .signup-banner h2, .signup-banner .subscribe-button {
     color: white; /* Adjust text color for readability */
 }
@@ -32,3 +31,4 @@ body {
 .subscribe-button:hover {
     background-color: rgba(0, 0, 0, 0.9);
 }
+
