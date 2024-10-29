@@ -1,7 +1,7 @@
 /* Existing styles... */
 
 body {
-    background-image: url('path/to/your-image.jpg'); /* Adjust this path */
+    background-image: url('image1.jpg'); /* Adjust this path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
