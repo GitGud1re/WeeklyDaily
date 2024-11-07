@@ -112,3 +112,18 @@ footer {
     text-align: center;
     padding: 40px 0;
 }
+/* Tag Styles */
+.tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #e69d00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
