@@ -127,3 +127,8 @@ footer {
     font-size: 0.9em;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+

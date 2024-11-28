@@ -8,26 +8,62 @@
         body {
             font-family: 'Roboto', sans-serif;
             margin: 20px;
-            background-color: #f4f6f9;
-            color: #333;
+            background-color: #ffffff;
+            color: #555555;
         }
         h1 {
             font-size: 2em;
-            color: #34495e;
+        color: #ffffff;
+        text-align: center; /* Center the title */
+        margin-bottom: 20px;
+        padding: 15px; /* Add padding inside the box */
+        background: rgb(0, 0, 0); /* White background for the title box */
+        border: 1px solid #ddd; /* Subtle border for the title box */
+        border-radius: 8px; /* Rounded corners for the title box */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for the title box */
         }
         p {
             font-size: 1.2em;
-            color: #7f8c8d;
+            color: #000000;
+            margin: 0;
         }
         .article-content {
             margin-top: 20px;
+            background: rgb(199, 199, 199); /* Add a clean white background for the box */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .article-image {
             max-width: 100%;
             height: auto;
             margin: 20px 0;
+            border-radius: 3%; /* Fully rounded image */
         }
+        @media (min-width: 1024px) {
+            .article-image {
+                max-width: 300px;
+                display: block;
+                margin: 20px auto;
+            }
+        }
+        .articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+.article-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
     </style>
+    
+    
 </head>
 <body>
     <h1>Apple seeds contain chemical harmful to human body</h1>
@@ -44,4 +80,6 @@ Cyanide is very poisonous. However, it is important to note that for there to be
 </body>
 </html>
 
+<style class="css">
 
+</style>
