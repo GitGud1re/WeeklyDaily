@@ -112,23 +112,36 @@ footer {
     text-align: center;
     padding: 40px 0;
 }
+
 /* Tag Styles */
 .tags {
-    margin-top: 10px;
     display: flex;
-    gap: 8px;
+    flex-wrap: wrap; /* Allows tags to wrap when there isn't enough space */
+    gap: 0.5rem; /* Adds space between tags */
+    margin-top: 0.5rem; /* Space above the tags */
+    justify-content: flex-start; /* Align tags to the left */
+    align-items: center; /* Center vertically */
 }
 
 .tag {
-    background-color: #e69d00;
-    color: white;
-    padding: 2px 4px;
-    border-radius: 6px;
-    font-size: 0.9em;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-size: 0.9rem; /* Adjust font size */
+    padding: 0.3rem 0.5rem; /* Internal padding */
+    border-radius: 0.3rem; /* Rounded corners */
+    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-  
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .tags {
+        justify-content: center; /* Center align tags on smaller screens */
+    }
+
+    .tag {
+        font-size: 0.8rem; /* Slightly smaller text on mobile */
+        padding: 0.2rem 0.4rem; /* Reduce padding for mobile */
+    }
+}
+
 
