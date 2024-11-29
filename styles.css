@@ -95,7 +95,7 @@ h1 {
 .subscribe-button {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #000000;
+    background-color: #34495e;
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -105,7 +105,7 @@ h1 {
 }
 
 .subscribe-button:hover {
-    background-color: #181a1d;
+    background-color: #2c3e50;
 }
 
 footer {
@@ -167,5 +167,3 @@ footer {
         padding: 0.2rem 0.4rem; /* Reduce padding for mobile */
     }
 }
-
-
