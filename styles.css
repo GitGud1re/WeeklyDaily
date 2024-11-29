@@ -114,6 +114,17 @@ footer {
 }
 
 /* Tag Styles */
+.article {
+    position: relative; /* Keep this to ensure that .tags stays inside the article */
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-direction: row; /* Maintain row layout for desktop */
+}
+
 .tags {
     position: absolute; /* Position relative to the parent article */
     top: 10px; /* 10px from the top of the article */
@@ -122,6 +133,7 @@ footer {
     flex-wrap: wrap; /* Allows tags to wrap when there isn't enough space */
     gap: 0.5rem; /* Adds space between tags */
     max-width: 100%; /* Prevent stretching beyond the container */
+    z-index: 10; /* Ensure tags stay above the article content */
 }
 
 .tag {
@@ -138,8 +150,16 @@ footer {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+    .article {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+
     .tags {
-        justify-content: center; /* Center align tags on smaller screens */
+        position: relative; /* Make tags flow with the article */
+        top: 0; /* Reset top positioning */
+        right: 0; /* Reset right positioning */
+        justify-content: flex-start; /* Align tags to the left for smaller screens */
+        margin-top: 10px; /* Add a bit of space above the tags */
     }
 
     .tag {
@@ -147,4 +167,5 @@ footer {
         padding: 0.2rem 0.4rem; /* Reduce padding for mobile */
     }
 }
+
 
