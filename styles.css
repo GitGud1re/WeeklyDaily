@@ -114,13 +114,26 @@ footer {
 }
 
 /* Tag Styles */
+.article {
+    position: relative; /* Keep this to ensure that .tags stays inside the article */
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-direction: row; /* Maintain row layout for desktop */
+}
+
 .tags {
+    position: absolute; /* Position relative to the parent article */
+    top: 10px; /* 10px from the top of the article */
+    right: 10px; /* 10px from the right side of the article */
     display: flex;
     flex-wrap: wrap; /* Allows tags to wrap when there isn't enough space */
     gap: 0.5rem; /* Adds space between tags */
-    margin-top: 0.5rem; /* Space above the tags */
-    justify-content: flex-start; /* Align tags to the left */
-    align-items: center; /* Center vertically */
+    max-width: 100%; /* Prevent stretching beyond the container */
+    z-index: 10; /* Ensure tags stay above the article content */
 }
 
 .tag {
@@ -130,12 +143,23 @@ footer {
     padding: 0.3rem 0.5rem; /* Internal padding */
     border-radius: 0.3rem; /* Rounded corners */
     white-space: nowrap; /* Prevent tags from breaking into multiple lines */
+    max-width: 200px; /* Limit tag width to avoid stretching */
+    text-overflow: ellipsis; /* Add ellipsis if the tag is too long */
+    overflow: hidden; /* Ensure text is hidden when overflowing */
 }
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+    .article {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+
     .tags {
-        justify-content: center; /* Center align tags on smaller screens */
+        position: relative; /* Make tags flow with the article */
+        top: 0; /* Reset top positioning */
+        right: 0; /* Reset right positioning */
+        justify-content: flex-start; /* Align tags to the left for smaller screens */
+        margin-top: 10px; /* Add a bit of space above the tags */
     }
 
     .tag {
