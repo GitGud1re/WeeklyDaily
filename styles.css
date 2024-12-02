@@ -137,8 +137,8 @@ footer {
 }
 
 .tag {
-    background-color: #d3ac00; /* Light gray background */
-    color: #c9c9c9; /* Dark text color */
+    background-color: #ffd000; /* Light gray background */
+    color: #ffffff; /* Dark text color */
     font-size: 0.9rem; /* Adjust font size */
     padding: 0.3rem 0.5rem; /* Internal padding */
     border-radius: 0.3rem; /* Rounded corners */
