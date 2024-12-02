@@ -136,17 +136,36 @@ footer {
     z-index: 10; /* Ensure tags stay above the article content */
 }
 
+/* Default tag styles */
 .tag {
-    background-color: #ffd000; /* Light gray background */
-    color: #ffffff; /* Dark text color */
-    font-size: 0.9rem; /* Adjust font size */
-    padding: 0.3rem 0.5rem; /* Internal padding */
-    border-radius: 0.3rem; /* Rounded corners */
-    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
-    max-width: 200px; /* Limit tag width to avoid stretching */
-    text-overflow: ellipsis; /* Add ellipsis if the tag is too long */
-    overflow: hidden; /* Ensure text is hidden when overflowing */
+    background-color: #fcce00; /* Default yellow background */
+    color: #ffffff; /* White text */
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+/* Gaming tag specific styles */
+.tag-gaming {
+    background-color: #5900ff; /* Blue background for Gaming */
+    color: #ffffff; /* White text */
+}
+
+/* Technology tag specific styles */
+.tag-technology {
+    background-color: #00c3ff; /* Green background for Technology */
+    color: #ffffff; /* White text */
+}
+
+/* Health tag specific styles */
+.tag-health {
+    background-color: #ffd000; /* Red background for Health */
+    color: #ffffff; /* White text */
+}
+
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {

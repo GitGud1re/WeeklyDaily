@@ -33,11 +33,11 @@ function initializeTags() {
         tagDiv.className = 'tags';
         tags.forEach(tag => {
             const tagSpan = document.createElement('span');
-            tagSpan.className = 'tag';
+            tagSpan.className = `tag tag-${tag.toLowerCase()}`; // Add a unique class for each tag
             tagSpan.innerText = tag;
             tagDiv.appendChild(tagSpan);
         });
-        
+
         // Add the tags div to the article
         article.appendChild(tagDiv);
     });
