@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.page-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;  /* Dark text color */
+    background-color: #fff;  /* White background for inactive buttons */
+    border: 2px solid #ddd;  /* Light gray border */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+    background-color: #f0f0f0;  /* Slightly gray when hovered */
+    border-color: #ccc;  /* Slightly darker gray border */
+}
+
+.page-btn.active {
+    background: linear-gradient(to right, #808080, #000000);  /* Gray to black gradient */
+    border-color: #333;  /* Dark border for the active button */
+    color: #fff;  /* White text for the active button */
+    cursor: default;  /* Disable hover effect on active button */
+}
